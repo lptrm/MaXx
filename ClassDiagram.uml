@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="8.80484831715188" y="138.83824770706616">first.Visualisierung</node>
+    <node x="-19.3355997218556" y="576.2406463757907">first.HMI</node>
+    <node x="672.8682408345917" y="60.74140043296222">first.Controller</node>
+    <node x="1064.6744114127293" y="511.757955190491">first.Figur</node>
+    <node x="1076.1744114127293" y="241.2740842227489">first.Spielfigur</node>
+    <node x="1473.4465191911295" y="-83.69169815858703">first.Fraction</node>
+    <node x="1053.1744114127293" y="-173.1960378680759">first.Spielfeld</node>
+    <node x="1054.1744114127293" y="715.5429014270502">first.Richtung</node>
+    <node x="708.3682408345917" y="-274.53453628970317">first.MaXx</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="first.MaXx" target="first.Spielfeld" relationship="CREATE">
+      <point x="74.5" y="0.0" />
+      <point x="1144.6744114127293" y="-236.03453628970317" />
+      <point x="0.0" y="-94.0" />
+    </edge>
+    <edge source="first.Spielfigur" target="first.Fraction" relationship="TO_ONE">
+      <point x="-4.114127293632919E-4" y="-82.50008422274891" />
+      <point x="1144.674" y="38.0" />
+      <point x="1252.674" y="38.0" />
+      <point x="1252.674" y="142.30790140845076" />
+      <point x="-108.4998149657772" y="-4.004329622091518E-4" />
+    </edge>
+    <edge source="first.MaXx" target="first.Spielfigur" relationship="CREATE">
+      <point x="74.5" y="-15.0" />
+      <point x="1745.2458149657773" y="-251.03453628970317" />
+      <point x="1745.2458149657773" y="398.2414004329622" />
+      <point x="68.5" y="74.46731621021331" />
+    </edge>
+    <edge source="first.Spielfeld" target="first.Spielfigur" relationship="TO_MANY">
+      <point x="-91.50041141272936" y="3.7868075906999366E-5" />
+      <point x="989.0" y="-79.196" />
+      <point x="989.0" y="323.774" />
+      <point x="-68.50041141272936" y="-8.422274891017878E-5" />
+    </edge>
+    <edge source="first.Spielfigur" target="first.Figur" relationship="TO_ONE">
+      <point x="0.0" y="82.5" />
+      <point x="0.0" y="-72.0" />
+    </edge>
+    <edge source="first.Spielfeld" target="first.Fraction" relationship="CREATE">
+      <point x="91.49958858727064" y="3.7868075906999366E-5" />
+      <point x="1382.0" y="-79.196" />
+      <point x="1382.0" y="104.06690140845075" />
+      <point x="-108.4998149657772" y="-38.24140043296222" />
+    </edge>
+    <edge source="first.MaXx" target="first.Controller" relationship="CREATE">
+      <point x="15.0" y="38.5" />
+      <point x="0.0" y="-94.0" />
+    </edge>
+    <edge source="first.MaXx" target="first.Visualisierung" relationship="CREATE">
+      <point x="-74.5" y="0.0" />
+      <point x="144.305" y="-236.03453628970317" />
+      <point x="-14.999848317151873" y="-126.5" />
+    </edge>
+    <edge source="first.Spielfeld" target="first.Fraction" relationship="TO_MANY">
+      <point x="-4.114127293632919E-4" y="94.0000378680759" />
+      <point x="1144.674" y="38.0" />
+      <point x="1252.674" y="38.0" />
+      <point x="1252.674" y="142.30790140845076" />
+      <point x="-108.4998149657772" y="-4.004329622091518E-4" />
+    </edge>
+    <edge source="first.Visualisierung" target="first.Fraction" relationship="TO_MANY">
+      <point x="1.5168284812716593E-4" y="-126.50024770706617" />
+      <point x="159.305" y="38.0" />
+      <point x="1252.674" y="38.0" />
+      <point x="1252.674" y="142.30790140845076" />
+      <point x="-108.4998149657772" y="-4.004329622091518E-4" />
+    </edge>
+    <edge source="first.Spielfigur" target="first.Fraction" relationship="CREATE">
+      <point x="68.49958858727064" y="-8.422274891017878E-5" />
+      <point x="1382.0" y="323.774" />
+      <point x="1382.0" y="104.06690140845075" />
+      <point x="-108.4998149657772" y="-38.24140043296222" />
+    </edge>
+    <edge source="first.Figur" target="first.Richtung" relationship="TO_MANY">
+      <point x="0.0" y="72.0" />
+      <point x="0.0" y="-83.0" />
+    </edge>
+    <edge source="first.Controller" target="first.Spielfigur" relationship="TO_MANY">
+      <point x="124.99975916540836" y="-4.004329622091518E-4" />
+      <point x="989.0" y="154.741" />
+      <point x="989.0" y="323.774" />
+      <point x="-68.50041141272936" y="-8.422274891017878E-5" />
+    </edge>
+    <edge source="first.Controller" target="first.Spielfeld" relationship="TO_ONE">
+      <point x="15.0" y="-94.0" />
+      <point x="812.8682408345917" y="-94.196" />
+      <point x="-91.5" y="-14.999962131924093" />
+    </edge>
+    <edge source="first.Controller" target="first.Visualisierung" relationship="TO_ONE">
+      <point x="-125.0" y="0.0" />
+      <point x="150.5" y="-110.59684727410394" />
+    </edge>
+    <edge source="first.Figur" target="first.Richtung" relationship="CREATE">
+      <point x="15.0" y="72.0" />
+      <point x="15.0" y="-83.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.723874256584537" showDependencies="true" x="873.0" y="313.5" />
+  <SelectedNodes>
+    <node>first.Fraction</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
